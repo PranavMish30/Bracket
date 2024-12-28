@@ -5,6 +5,7 @@ print("\n<<< Bracket Shell >>>\n")
 while True:
     text = input("<<>> ")
     result = bracket.run(text)
-    print(result)
+    for obj in result:
+        print(obj.type,obj.value)
     
     
