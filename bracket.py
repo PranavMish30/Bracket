@@ -1,6 +1,6 @@
 class Token:
-    def __init__(self,value,t_type):
-        self.type = t_type
+    def __init__(self,value,token_type):
+        self.type = token_type
         self.value = value
         
 class Lexer:
