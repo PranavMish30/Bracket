@@ -15,7 +15,7 @@ class Lexer:
                             'IDENTIFIER': r'[a-zA-Z_]\w*' ,
                             'FLOAT': r'\b-?\d+\.\d+\b' ,
                             'INT': r'\b-?\d+\b' ,
-                            'OPERATOR': r'[+\-*/%]' ,
+                            'OPERATOR': r'[+\-*/%=]' ,
                             'COMMENT': r'#.*' ,
                             'WHITESPACE': r'\s+',
                             'MISMATCH': r'.'
