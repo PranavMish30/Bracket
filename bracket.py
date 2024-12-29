@@ -17,7 +17,8 @@ class Lexer:
                             'INT': r'\b-?\d+\b' ,
                             'OPERATOR': r'[+\-*/%]' ,
                             'COMMENT': r'#.*' ,
-                            'WHITESPACE': r'\s+'
+                            'WHITESPACE': r'\s+',
+                            'MISMATCH': r'.'
                             }
         self.token_regex = '|'.join(f'(?P<{name}>{pattern})' for name, pattern in self.token_types.items())
         self.tokens = []
